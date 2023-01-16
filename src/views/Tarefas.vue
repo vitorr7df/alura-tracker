@@ -2,7 +2,7 @@
   <Formulario @aoSalvarTarefa="salvarTarefa"/>
   <div class="lista">
       <Box v-if="semTarefas">
-          Confie no seu Potencial ;) <span class="has-text-weight-bold">:(</span>
+          Confie no seu potencial ;) <span class="has-text-weight-bold"></span>
       </Box>
       <Tarefa v-for="(tarefa, index) in tarefas" :tarefa="tarefa" :key="index"/>
   </div>
