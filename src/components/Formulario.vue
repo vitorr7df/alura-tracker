@@ -36,7 +36,7 @@ import Temporizador from "./Temporizador.vue";
 import { useStore } from 'vuex'
 import { key } from '@/store'
 export default defineComponent({
-  name: "Formulario-name",
+  name: "Formulario-one",
   emits: ['aoSalvarTarefa'],
   components: {
     Temporizador,
