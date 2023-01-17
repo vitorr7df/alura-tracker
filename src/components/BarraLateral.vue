@@ -1,26 +1,24 @@
 <template>
   <header>
     <h1>
-      <img src="../assets/logo.png" alt="">
+      <img alt="Alura Tracker" src="../assets/logo.png">
     </h1>
     <div class="has-text-centered">
-      <button class="button" @click="alterarTema">
-        {{ textoBotao }}
-      </button>
+      <button class="button" @click="alterarModo">Ativar modo {{ textoBtn }}</button>
     </div>
-    <nav class="panel at-5">
+    <nav class="panel mt-5">
       <ul>
         <li>
-          <RouterLink to="/" class="link">
+          <router-link to="/" class="link">
             <i class="fas fa-tasks"></i>
             tarefas
-          </RouterLink>
+          </router-link>
         </li>
         <li>
-          <RouterLink to="/projetos" class="link">
+          <router-link to="/projetos" class="link">
             <i class="fas fa-project-diagram"></i>
             projetos
-          </RouterLink>
+          </router-link>
         </li>
       </ul>
     </nav>
@@ -28,62 +26,57 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'BarraLateral',
-  emits: ['aoTemaAlterado'],
-  data() {
+  name: "BarraLateral",
+  emits: ['aoAlterarModo'],
+  data () {
     return {
-      modoEscuroAtivo: false
-    }
-  },
-  computed: {
-    textoBotao() {
-      if (this.modoEscuroAtivo) {
-        return 'Desativar modo escuro'
-      }
-      return 'Ativar modo escuro'
+      modoEscuro: false
     }
   },
   methods: {
-    alterarTema() {
-      this.modoEscuroAtivo = !this.modoEscuroAtivo
-      this.$emit('aoTemaAlterado', this.modoEscuroAtivo)
+    alterarModo () : void {
+      this.modoEscuro = !this.modoEscuro
+      this.$emit('aoAlterarModo', this.modoEscuro)
+    }
+  },
+  computed: {
+    textoBtn () : string {
+      return this.modoEscuro ? 'claro' : 'escuro'
     }
   }
-})
+});
 </script>
-
 <style scoped>
-/* todo estilo do componente */
+h1 {
+  text-align: center;
+}
+strong {
+  color: #f95738;
+}
 header {
-  padding: 1rem;
   background: #0d3b66;
   width: 100%;
   height: 100vh;
-  text-align: center;
+  padding: 2rem;
 }
-
 @media only screen and (max-width: 768px) {
   header {
-    padding: 2.5rem;
     height: auto;
   }
 }
-  .panel li {
-    margin: 8px 0;
-  }
-
-  .link {
-    color: #fff;
-  }
-
-  .link:hover {
-    color: #FAF0CA;
-  }
-
-  .link.router-link-active {
-    color: #FAF0CA;
-  }
+.panel li {
+  margin: 8px 0;
+}
+.link {
+  color: #fff;
+}
+.link:hover {
+  color: #FAF0CA;
+}
+.link.router-link-active {
+  color: #FAF0CA;
+}
 </style>

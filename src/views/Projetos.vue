@@ -1,19 +1,19 @@
 <template>
   <div class="projetos">
     <h1 class="title">Projetos</h1>
-    <RouterView></RouterView>
+    <router-view></router-view>
   </div>
 </template>
 
 <script lang="ts">
 
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'Projetos-name'
+  name: 'Projetos'
 })
 
-</script> 
+</script>
 
 <style scoped>
 .projetos {
