@@ -1,10 +1,6 @@
 {
   "projetos": [
     {
-      "id": 1,
-      "nome": "Alura Tracker V3.0"
-    },
-    {
       "nome": "Subir projeto pro github",
       "id": 2
     },
@@ -13,15 +9,27 @@
       "id": 3
     },
     {
-      "nome": "Estudo Golang",
-      "id": 4
+      "id": 4,
+      "nome": "Estudo Golang v2.0"
+    },
+    {
+      "nome": "Estudando Chat-GPT",
+      "id": 5
+    },
+    {
+      "nome": "Estudar NodeJs",
+      "id": 6
+    },
+    {
+      "nome": "Revisão VueJs",
+      "id": 7
     }
   ],
   "tarefas": [
     {
       "id": 1,
       "duracaoEmSegundos": 120,
-      "descricao": "Configuração do ambiente",
+      "descricao": "Configuração do ambiente vuejs",
       "projeto": {
         "id": 1,
         "nome": "Alura Tracker V3.0"
@@ -130,6 +138,56 @@
         "id": 3
       },
       "id": 13
+    },
+    {
+      "duracaoEmSegundos": 8,
+      "descricao": "modulos",
+      "projeto": {
+        "nome": "Estudo Golang",
+        "id": 4
+      },
+      "id": 14
+    },
+    {
+      "duracaoEmSegundos": 0,
+      "descricao": "teste",
+      "id": 15
+    },
+    {
+      "duracaoEmSegundos": 7,
+      "descricao": "bot",
+      "projeto": {
+        "nome": "Estudando Chat-GPT",
+        "id": 5
+      },
+      "id": 16
+    },
+    {
+      "duracaoEmSegundos": 6,
+      "descricao": "teste",
+      "projeto": {
+        "nome": "Plano de Estudos de VueJS",
+        "id": 3
+      },
+      "id": 17
+    },
+    {
+      "duracaoEmSegundos": 5,
+      "descricao": "Electron JS",
+      "projeto": {
+        "nome": "Estudar NodeJs",
+        "id": 6
+      },
+      "id": 18
+    },
+    {
+      "duracaoEmSegundos": 2,
+      "descricao": "revisando",
+      "projeto": {
+        "nome": "Revisão VueJs",
+        "id": 7
+      },
+      "id": 19
     }
   ]
 }
