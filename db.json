@@ -21,7 +21,7 @@
       "id": 6
     },
     {
-      "nome": "Revisão VueJs",
+      "nome": "Electron NodeJS",
       "id": 7
     }
   ],
@@ -29,7 +29,7 @@
     {
       "id": 1,
       "duracaoEmSegundos": 120,
-      "descricao": "Configuração do ambiente vuejs",
+      "descricao": "Ambiente vuejs",
       "projeto": {
         "id": 1,
         "nome": "Alura Tracker V3.0"
@@ -188,6 +188,15 @@
         "id": 7
       },
       "id": 19
+    },
+    {
+      "duracaoEmSegundos": 5,
+      "descricao": "chatgpt2",
+      "projeto": {
+        "nome": "Estudando Chat-GPT",
+        "id": 5
+      },
+      "id": 20
     }
   ]
 }
