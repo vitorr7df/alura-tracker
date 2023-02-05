@@ -1,13 +1,14 @@
 <template>
   <header>
     <h1>
-      <img alt="Alura Tracker" src="../assets/logo.png">
+      <img alt="RamosVeg" src="../assets/logo.png">
     </h1>
     <div class="has-text-centered">
       <button class="button" @click="alterarModo">Ativar modo {{ textoBtn }}</button>
     </div>
-    <nav class="panel mt-5">
-      <ul>
+    <br>
+    <nav class="$panel-shadow">
+      <ul class="has-text-centered">
         <li>
           <router-link to="/" class="link">
             <i class="fas fa-tasks"></i>
@@ -26,7 +27,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
+
 
 export default defineComponent({
   name: "BarraLateral",
@@ -56,8 +58,11 @@ h1 {
 strong {
   color: #f95738;
 }
+img {
+  max-width: 160px;
+}
 header {
-  background: #0d3b66;
+  background: #ffffff;
   width: 100%;
   height: 100vh;
   padding: 2rem;
@@ -71,12 +76,13 @@ header {
   margin: 8px 0;
 }
 .link {
-  color: #fff;
+  color: #2d9644;
+  font-size: larger;
 }
 .link:hover {
   color: #FAF0CA;
 }
 .link.router-link-active {
-  color: #FAF0CA;
+  color: #2d9644;
 }
 </style>

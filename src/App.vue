@@ -1,9 +1,9 @@
 <template>
   <main class="columns is-gapless is-multiline" :class="{ 'modo-escuro' : modoEscuro}">
-    <div class="column is-one-quarter">
+    <div class="column is-one-fifth">
       <BarraLateral @aoAlterarModo="alterarModo"/>
     </div>
-    <div class="column is-three-quarters conteudo">
+    <div class="column is-four-fifths conteudo">
       <Notificacoes />
       <router-view></router-view>
     </div>
